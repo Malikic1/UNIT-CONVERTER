@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+   <html>
+         <head>
+                    <title>UNIT CONVERTER</title>
+                    <meta name="viewport, content=width=device-width initial-scale=1.0" >
+                    <link href="index.css" rel="stylesheet"/>
+                    <link href="index.css" rel="stylesheet"/>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+                integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+          </head>
+          <body>
+                    <h1 class="design p1"><i class="fa-solid fa-arrow-up-right-dots"></i></h1>
+                    <h1><i class="fa-solid fa-arrow-right-to-bracket logo"></i>&nbsp;&nbsp; UNIT CONVERTER</h1>
+                    <p><b><u>NOTE:</u></b>&nbsp;&nbsp;&nbsp; default unit scale is in &nbsp;<b class="b">METER.</b></p>
+                    <div class="cont-1">
+                      <h1 class="design p5"><i class="fa-solid fa-arrow-up-right-dots"></i></h1>
+                         <p><b>INPUT VALUE TO CONVERT BELOW</b>
+                              <br/>
+                              <input id="initial" type="number" placeholder="..default unit value is in Meter.. " 
+                              oninput="lengthConverter(this.value)" 
+                              onchange="lengthConverter(this.value)" class="inp1"/>
+                         </p>
+                    </div>
+                    <div class="cont-2">
+                    <br/>
+                              <label class="unit-lab"><b>CENTIMETER</b></label>
+                                   <p id="cm" class="output"><span id="u-cm"></span></p>
+                                   <br/>
+                              <label class="unit-lab"><b>KILOMETER</b></label>     
+                                   <p id="km" class="output"></p>
+                                   <br/>
+                              <label class="unit-lab"><b>INCH</b></label>
+                                   <p id="inch" class="output"></p>
+                                   <br/>
+                                   <h1 class="design p4"><i class="fa-solid fa-arrow-up-right-dots"></i></h1>
+                              <label class="unit-lab"><b>MILLIMETER</b></label>
+                                   <P id="mm" class="output"></P></label>
+                                   <br/>
+                              <label class="unit-lab"><b>FEET</b></label>
+                              <h1 class="design p2"><i class="fa-solid fa-arrow-up-right-dots"></i></h1>
+                                        <P id="ft" class="output"></P>
+                              </label>
+                                   <br/>
+                              <label class="unit-lab"><b>YARD</b></label>
+                                   <P id="yard" class="output"></P>
+                              </label>
+                                   <br/>
+                    </div>
+                    <br/>
+          <script src="index.js"></script>
+          </body>
+     </html>
